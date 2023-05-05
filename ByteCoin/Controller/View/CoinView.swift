@@ -11,7 +11,13 @@ final class CoinView: UIView {
 	
 	private let mainStackView = UIStackView(axis: .vertical, spacing: 25)
 	private let coinStackView = UIStackView(axis: .horizontal, spacing: 10)
-	private let titleLabel = UILabel(text: "ByteCoin", textColor: UIColor(named: Color.title)!, fontSize: 50, weight: .thin, alignment: .center)
+	private let titleLabel = UILabel(
+		text: "ByteCoin",
+		textColor: UIColor(named: Color.title) ?? .black,
+		fontSize: 50,
+		weight: .thin,
+		alignment: .center
+	)
 	private let currencyLabel = UILabel(text: "USD")
 	private let bitcoinLabel = UILabel(text: "...")
 	
@@ -28,6 +34,8 @@ final class CoinView: UIView {
 		return imageView
 	}()
 	
+	// MARK: - Init
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		addSubviews()
@@ -38,6 +46,8 @@ final class CoinView: UIView {
 		fatalError("init(coder:) has not been implemented")
 	}
 }
+
+// MARK: - Layout
 
 private extension CoinView {
 	func addSubviews() {
