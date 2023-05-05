@@ -17,6 +17,7 @@
 		2FB919B32A049EDB005C2A24 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919B22A049EDB005C2A24 /* CoinView.swift */; };
 		2FB919B62A04A02B005C2A24 /* Extension + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919B52A04A02B005C2A24 /* Extension + UILabel.swift */; };
 		2FB919B82A04AABF005C2A24 /* Extension + UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919B72A04AABF005C2A24 /* Extension + UIStackView.swift */; };
+		2FB919DB2A0542AD005C2A24 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919DA2A0542AD005C2A24 /* CoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2FB919B22A049EDB005C2A24 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
 		2FB919B52A04A02B005C2A24 /* Extension + UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UILabel.swift"; sourceTree = "<group>"; };
 		2FB919B72A04AABF005C2A24 /* Extension + UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIStackView.swift"; sourceTree = "<group>"; };
+		2FB919DA2A0542AD005C2A24 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		2FB919952A04925B005C2A24 /* ByteCoin */ = {
 			isa = PBXGroup;
 			children = (
+				2FB919D92A0542A2005C2A24 /* Model */,
 				2FB919AD2A0494C2005C2A24 /* Controller */,
 				2FB919B42A04A008005C2A24 /* Extension */,
 				2FB919AC2A0494B5005C2A24 /* Resources */,
@@ -117,6 +120,14 @@
 				2FB919B72A04AABF005C2A24 /* Extension + UIStackView.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		2FB919D92A0542A2005C2A24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FB919DA2A0542AD005C2A24 /* CoinManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB919DB2A0542AD005C2A24 /* CoinManager.swift in Sources */,
 				2FB9199B2A04925B005C2A24 /* ViewController.swift in Sources */,
 				2FB919B02A049C4B005C2A24 /* Color.swift in Sources */,
 				2FB919B62A04A02B005C2A24 /* Extension + UILabel.swift in Sources */,
