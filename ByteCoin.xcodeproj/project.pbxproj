@@ -57,14 +57,38 @@
 		2FB919952A04925B005C2A24 /* ByteCoin */ = {
 			isa = PBXGroup;
 			children = (
-				2FB919962A04925B005C2A24 /* AppDelegate.swift */,
-				2FB919982A04925B005C2A24 /* SceneDelegate.swift */,
-				2FB9199A2A04925B005C2A24 /* ViewController.swift */,
-				2FB9199F2A04925C005C2A24 /* Assets.xcassets */,
+				2FB919AD2A0494C2005C2A24 /* Controller */,
+				2FB919AC2A0494B5005C2A24 /* Resources */,
+				2FB919AE2A0494D0005C2A24 /* App */,
 				2FB919A12A04925C005C2A24 /* LaunchScreen.storyboard */,
 				2FB919A42A04925C005C2A24 /* Info.plist */,
 			);
 			path = ByteCoin;
+			sourceTree = "<group>";
+		};
+		2FB919AC2A0494B5005C2A24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FB9199F2A04925C005C2A24 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2FB919AD2A0494C2005C2A24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FB9199A2A04925B005C2A24 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FB919AE2A0494D0005C2A24 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2FB919962A04925B005C2A24 /* AppDelegate.swift */,
+				2FB919982A04925B005C2A24 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
