@@ -14,6 +14,9 @@
 		2FB919A32A04925C005C2A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB919A12A04925C005C2A24 /* LaunchScreen.storyboard */; };
 		2FB919AB2A04940C005C2A24 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2FB919AA2A04940C005C2A24 /* .gitignore */; };
 		2FB919B02A049C4B005C2A24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919AF2A049C4B005C2A24 /* Color.swift */; };
+		2FB919B32A049EDB005C2A24 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919B22A049EDB005C2A24 /* CoinView.swift */; };
+		2FB919B62A04A02B005C2A24 /* Extension + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919B52A04A02B005C2A24 /* Extension + UILabel.swift */; };
+		2FB919B82A04AABF005C2A24 /* Extension + UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919B72A04AABF005C2A24 /* Extension + UIStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		2FB919A42A04925C005C2A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FB919AA2A04940C005C2A24 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2FB919AF2A049C4B005C2A24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2FB919B22A049EDB005C2A24 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
+		2FB919B52A04A02B005C2A24 /* Extension + UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UILabel.swift"; sourceTree = "<group>"; };
+		2FB919B72A04AABF005C2A24 /* Extension + UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIStackView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				2FB919AD2A0494C2005C2A24 /* Controller */,
+				2FB919B42A04A008005C2A24 /* Extension */,
 				2FB919AC2A0494B5005C2A24 /* Resources */,
 				2FB919AE2A0494D0005C2A24 /* App */,
 				2FB919A12A04925C005C2A24 /* LaunchScreen.storyboard */,
@@ -81,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				2FB9199A2A04925B005C2A24 /* ViewController.swift */,
+				2FB919B12A049E80005C2A24 /* View */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -92,6 +100,23 @@
 				2FB919982A04925B005C2A24 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		2FB919B12A049E80005C2A24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FB919B22A049EDB005C2A24 /* CoinView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FB919B42A04A008005C2A24 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2FB919B52A04A02B005C2A24 /* Extension + UILabel.swift */,
+				2FB919B72A04AABF005C2A24 /* Extension + UIStackView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +192,11 @@
 			files = (
 				2FB9199B2A04925B005C2A24 /* ViewController.swift in Sources */,
 				2FB919B02A049C4B005C2A24 /* Color.swift in Sources */,
+				2FB919B62A04A02B005C2A24 /* Extension + UILabel.swift in Sources */,
+				2FB919B32A049EDB005C2A24 /* CoinView.swift in Sources */,
 				2FB919972A04925B005C2A24 /* AppDelegate.swift in Sources */,
 				2FB919992A04925B005C2A24 /* SceneDelegate.swift in Sources */,
+				2FB919B82A04AABF005C2A24 /* Extension + UIStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

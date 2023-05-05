@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+	
+	private let coinView = CoinView()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -21,11 +23,15 @@ class ViewController: UIViewController {
 
 private extension ViewController {
 	func addSubviews() {
-		
+		view.addSubview(coinView)
 	}
 	
 	func constraints() {
-		
+		NSLayoutConstraint.activate([
+			coinView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+			coinView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+			coinView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+		])
 	}
 	
 	func setupView() {

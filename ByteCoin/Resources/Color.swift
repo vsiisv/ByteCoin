@@ -10,5 +10,5 @@ import Foundation
 enum Color {
 	static let background = "Background Color"
 	static let icon = "Icon Color"
-	static let tint = "Title Color"
+	static let title = "Title Color"
 }
