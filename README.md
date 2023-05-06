@@ -1,5 +1,7 @@
 # ByteCoin
 
+The project shows the bitcoin exchage rate
+
 1. Networking
 2. Parse JSON
 
