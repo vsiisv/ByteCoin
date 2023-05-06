@@ -18,8 +18,8 @@ final class CoinView: UIView {
 		weight: .thin,
 		alignment: .center
 	)
-	let currencyLabel = UILabel(text: "USD")
-	let bitcoinLabel = UILabel(text: "...")
+	private let currencyLabel = UILabel(text: "USD")
+	private let bitcoinLabel = UILabel(text: "...")
 	
 	private lazy var coinView: UIView = {
 		let view = UIView()
@@ -46,6 +46,18 @@ final class CoinView: UIView {
 	
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
+	}
+}
+
+// MARK: - Update text label
+
+extension CoinView {
+	func updateBitcoinLabelText(_ text: String) {
+		bitcoinLabel.text = text
+	}
+	
+	func updateCurrencyLabelText(_ text: String) {
+		currencyLabel.text = text
 	}
 }
 

@@ -68,7 +68,8 @@ extension CoinViewController: CoinManagerDelegate {
 	
 	func didUpdatePrice(price: Double) {
 		DispatchQueue.main.async {
-			self.coinView.bitcoinLabel.text = String(format: "%.2f", price)
+			let price = String(format: "%.2f", price)
+			self.coinView.updateBitcoinLabelText(price)
 		}
 	}
 }
@@ -91,6 +92,6 @@ extension CoinViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 		let selectedCurrency = coinManager.currencyArray[row]
 		coinManager.getCoinPrice(for: selectedCurrency)
-		coinView.currencyLabel.text = selectedCurrency
+		coinView.updateCurrencyLabelText(selectedCurrency)
 	}
 }
