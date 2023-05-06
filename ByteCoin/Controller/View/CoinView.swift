@@ -18,8 +18,8 @@ final class CoinView: UIView {
 		weight: .thin,
 		alignment: .center
 	)
-	private let currencyLabel = UILabel(text: "USD")
-	private let bitcoinLabel = UILabel(text: "...")
+	let currencyLabel = UILabel(text: "USD")
+	let bitcoinLabel = UILabel(text: "...")
 	
 	private lazy var coinView: UIView = {
 		let view = UIView()
