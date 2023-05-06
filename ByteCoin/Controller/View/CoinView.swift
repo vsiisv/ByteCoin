@@ -23,6 +23,8 @@ final class CoinView: UIView {
 	
 	private lazy var coinView: UIView = {
 		let view = UIView()
+		view.clipsToBounds = true
+		view.layer.cornerRadius = 40
 		view.backgroundColor = UIColor.tertiaryLabel
 		return view
 	}()
@@ -59,15 +61,12 @@ private extension CoinView {
 		coinStackView.addArrangedSubview(imageView)
 		coinStackView.addArrangedSubview(bitcoinLabel)
 		coinStackView.addArrangedSubview(currencyLabel)
-	
 	}
 	
 	func setupConstraints() {
 		translatesAutoresizingMaskIntoConstraints = false
 		mainStackView.translatesAutoresizingMaskIntoConstraints = false
 		coinStackView.translatesAutoresizingMaskIntoConstraints = false
-		
-		bitcoinLabel.setContentHuggingPriority(UILayoutPriority(249), for: .horizontal)
 		
 		NSLayoutConstraint.activate([
 			mainStackView.topAnchor.constraint(equalTo: topAnchor),
@@ -79,8 +78,6 @@ private extension CoinView {
 			titleLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: 230),
 
 			coinView.heightAnchor.constraint(equalToConstant: 80),
-			coinView.leadingAnchor.constraint(equalTo: mainStackView.leadingAnchor, constant: 10),
-			coinView.trailingAnchor.constraint(equalTo: mainStackView.trailingAnchor, constant: -10),
 			
 			coinStackView.topAnchor.constraint(equalTo: coinView.topAnchor),
 			coinStackView.trailingAnchor.constraint(equalTo: coinView.trailingAnchor, constant: -10),

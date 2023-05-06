@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2FB919972A04925B005C2A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919962A04925B005C2A24 /* AppDelegate.swift */; };
 		2FB919992A04925B005C2A24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB919982A04925B005C2A24 /* SceneDelegate.swift */; };
-		2FB9199B2A04925B005C2A24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9199A2A04925B005C2A24 /* ViewController.swift */; };
+		2FB9199B2A04925B005C2A24 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9199A2A04925B005C2A24 /* CoinViewController.swift */; };
 		2FB919A02A04925C005C2A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9199F2A04925C005C2A24 /* Assets.xcassets */; };
 		2FB919A32A04925C005C2A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB919A12A04925C005C2A24 /* LaunchScreen.storyboard */; };
 		2FB919AB2A04940C005C2A24 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2FB919AA2A04940C005C2A24 /* .gitignore */; };
@@ -25,7 +25,7 @@
 		2FB919932A04925B005C2A24 /* ByteCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB919962A04925B005C2A24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FB919982A04925B005C2A24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2FB9199A2A04925B005C2A24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FB9199A2A04925B005C2A24 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		2FB9199F2A04925C005C2A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FB919A22A04925C005C2A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FB919A42A04925C005C2A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		2FB919AD2A0494C2005C2A24 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2FB9199A2A04925B005C2A24 /* ViewController.swift */,
+				2FB9199A2A04925B005C2A24 /* CoinViewController.swift */,
 				2FB919B12A049E80005C2A24 /* View */,
 			);
 			path = Controller;
@@ -205,7 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB919DB2A0542AD005C2A24 /* CoinManager.swift in Sources */,
-				2FB9199B2A04925B005C2A24 /* ViewController.swift in Sources */,
+				2FB9199B2A04925B005C2A24 /* CoinViewController.swift in Sources */,
 				2FB919B02A049C4B005C2A24 /* Color.swift in Sources */,
 				2FB919B62A04A02B005C2A24 /* Extension + UILabel.swift in Sources */,
 				2FB919B32A049EDB005C2A24 /* CoinView.swift in Sources */,

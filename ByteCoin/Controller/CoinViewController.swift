@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CoinViewController: UIViewController {
 	
 	private var coinManager = CoinManager()
 	
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 
 // MARK: - Layout
 
-private extension ViewController {
+private extension CoinViewController {
 	func addSubviews() {
 		view.addSubview(coinView)
 		view.addSubview(pickerView)
@@ -61,7 +61,7 @@ private extension ViewController {
 
 // MARK: - Coin Manager Delegate
 
-extension ViewController: CoinManagerDelegate {
+extension CoinViewController: CoinManagerDelegate {
 	func didFailWithError(_ error: Error) {
 		print(error)
 	}
@@ -75,7 +75,7 @@ extension ViewController: CoinManagerDelegate {
 
 // MARK: - PickerView delegate and datasource
 
-extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+extension CoinViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 	func numberOfComponents(in pickerView: UIPickerView) -> Int {
 		return 1
 	}
